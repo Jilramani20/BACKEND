@@ -1,0 +1,13 @@
+{
+    "name" : "Shanks",
+    "age" : 30,
+    "Profession" : "Pirate",
+    "Hobbies" : ["Sailing", "Fighting", "Drinking"],
+    "IsCaptain" : true,
+    "Ship" : {
+        "Name" : "Red-Haired Pirate Ship",
+        "Type" : "Sailing Ship",
+        "CrewSize" : 100
+    }
+
+}

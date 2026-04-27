@@ -13,10 +13,10 @@ app.use("/about", (req,res)=>{
     })
 })
 app.use("/contact", (req,res)=>{
-    res.send("<h1>This is contact page</h1>");  
+    res.send("<h1>This is Contact page</h1>");  
 })
 app.use("/detail", (req,res)=>{
-    res.send("<h1>This is detail page</h1>");  
+    res.send("<h1>This is Detail page</h1>");  
 })
 app.use("/", (req,res)=>{
      res.send("<h1>Hello, welcome to Homepage</h1>"); 

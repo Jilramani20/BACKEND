@@ -1,0 +1,16 @@
+{
+  "name": "07-postman",
+  "version": "1.0.0",
+  "description": "We cannot do POST requests with just a browser, so we will use Postman for that.\r because in post requests we usually send data to the server, and browsers are not designed for that.",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

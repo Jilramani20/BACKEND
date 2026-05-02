@@ -1,0 +1,16 @@
+{
+  "name": "08-middleware",
+  "version": "1.0.0",
+  "description": "Middle where means \"in the middle\". In Express, middleware functions are functions that have access to the request object (`req`), the response object (`res`), and the next middleware function in the application's request-response cycle. They can execute any code, make changes to the request and response objects, end the request-response cycle, or call the next middleware function.",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "first.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

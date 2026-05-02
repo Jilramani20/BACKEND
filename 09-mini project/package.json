@@ -1,0 +1,16 @@
+{
+  "name": "09-mini-project",
+  "version": "1.0.0",
+  "description": "<table>\r     <tr>\r         <th>Code</th>\r         <th>Meaning </th>\r         <th> When to Use </th>\r     </tr>\r     <tr>\r         <td>200</td>\r         <td>OK</td>\r         <td>Successful GET/PUT/PATCH/DELETE</td>\r     </tr>\r     <tr>\r         <td>201</td>\r         <td>Created</td>\r         <td>Resource created (POST)</td>\r     </tr>\r     <tr>\r         <td>400</td>\r         <td>Bad Request</td>\r         <td>Invalid Client input</td>\r     </tr>\r     <tr>\r         <td>401</td>\r         <td>Unauthorized</td>\r         <td>Authentication required</td>\r     </tr>\r     <tr>\r         <td>403</td>\r         <td>Forbidden</td>\r         <td>No permission</td>\r     </tr>\r     <tr>\r         <td>404</td>\r         <td>Not Found</td>\r         <td>Resource not found</td>\r     </tr>\r     <tr>\r         <td>500</td>\r         <td>Internal Server Error</td>\r         <td>Server-side failure</td>\r     </tr>\r </table>",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

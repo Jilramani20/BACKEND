@@ -1,0 +1,16 @@
+{
+  "name": "10-project-continue-and-database",
+  "version": "1.0.0",
+  "description": "- Database is an organized collection of data and we can query it to retrieve specific information.\r - DBMS is a software (appliaction) that allows us to create, manage, and interact with databases. so database is just a collection of data and DBMS is the software that allows us to manage and interact with that data.",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

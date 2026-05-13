@@ -1,0 +1,22 @@
+{
+  "name": "19-jwt-tokens",
+  "version": "1.0.0",
+  "description": "- JSON Web Token (JWT) - In previous lec we learn that after login client just have to send the jwt token so that they don't have to send username and password again and again. - JWT token is stateless so we don't have to store it in database or in server. - JWT token = Header.Payload.Signature - Payload = some data about user like username, email, id etc. user send this with cookie so they don't have to send it with the get request. - No sensitive data should be stored in payload because it is not encrypted and anyone can decode it.",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.6.2",
+    "validator": "^13.15.35"
+  }
+}

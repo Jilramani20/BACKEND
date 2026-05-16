@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Chat app</h1>
+    <input style="height: 30px; padding: 3px;" type="text" placeholder="Enter Room Number" id="roomId">
+    <button style="height: 30px; padding: 3px;" onclick="joinRoom()">Join Room</button>
+    <div id="msgDisplay" style="width: 98vw; height: 50vh; margin-right: 100px; background-color: antiquewhite; margin-bottom: 10px; margin-top: 10px;"></div>
+    <input style="width: 80vw; height: 30px; padding: 3px;" type="text" placeholder="Type your message here" id="msg">
+    <button style="height: 30px; padding: 3px;" onclick="sendMessage()">Send message</button>
+
+
+<script src="/socket.io/socket.io.js"></script>
+
+<script>
+
+    const socket = io();
+        const msgDisplay = document.getElementById('msgDisplay');
+        const msgInput = document.getElementById('msg');
+        const room = document.getElementById('roomId');
+        let roomId=0;
+        socket.emit('join-room', roomId);
+
+        // function sendMessage(){
+        //     const msg = msgInput.value;
+        //     socket.emit('message', msg);
+        //     msgInput.value="";
+
+        //     const element = document.createElement('div');
+        //     element.textContent = msg;
+        //     element.style.textAlign = "right";
+        //     msgDisplay.appendChild(element);
+        // }
+
+        function sendMessage(){
+            const msg = msgInput.value;
+            socket.emit('message', {roomId, msg});
+            msgInput.value="";
+
+            const element = document.createElement('div');
+            element.textContent = msg;
+            element.style.textAlign = "right";
+            msgDisplay.appendChild(element);
+        }
+
+        socket.on('connect', ()=>{
+            console.log(socket.id);
+        })
+
+        socket.on('new-message',(data)=>{
+            const element = document.createElement('div');
+            element.textContent = data;
+            msgDisplay.appendChild(element);
+        })
+
+        function joinRoom(){
+            roomId = room.value;
+            socket.emit('join-room', roomId);
+        }
+
+</script>
+
+</body>
+</html>

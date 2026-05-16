@@ -1,0 +1,17 @@
+{
+  "name": "27-socket.io-continue",
+  "version": "1.0.0",
+  "description": "> A comprehensive guide to understanding Socket.io from first principles — how it works under the hood, why it was built, and what makes it the backbone of real-time web communication.",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "path": "^0.12.7",
+    "socket.io": "^4.8.3"
+  }
+}
